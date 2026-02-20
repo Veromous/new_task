@@ -1,0 +1,348 @@
+CO-WORKING SPACE WEBSITE
+FULL VISUAL, CONTENT & STRUCTURE SPECIFICATION
+(NUXT 3 + NUXT UI ONLY)
+
+================================================
+1. GENERAL RULES
+================================================
+Framework: Nuxt 3
+UI Library: Nuxt UI ONLY (no custom UI libraries)
+Coding style: Clean, component-based, reusable
+Layout: Vertical scrolling, full-width sections
+Responsiveness: Desktop, Tablet, Mobile
+Animations: Minimal, smooth (optional fade-in)
+
+------------------------------------------------
+IMPORTANT
+------------------------------------------------
+• Do NOT invent copy.
+• Use the exact words provided below.
+• Images and layout positioning are PRIORITY.
+• Nuxt UI components must be used strictly.
+
+================================================
+2. GLOBAL APP STRUCTURE
+================================================
+
+<AppLayout>
+ ├─ Fixed Header
+ ├─ Main Scroll Area
+ │   ├─ Hero Section
+ │   ├─ Features Grid
+ │   ├─ Image + Text Split
+ │   ├─ Amenities Grid
+ │   ├─ Pricing Cards
+ │   └─ Contact Section
+ └─ Footer
+</AppLayout>
+
+All sections wrapped in UContainer.
+
+================================================
+3. HEADER (FIXED TOP)
+================================================
+
+POSITION
+- Fixed at top
+- Full width
+- Always visible on scroll
+
+LAYOUT
+- Left: Logo image
+- Right: Navigation links
+- Mobile: Hamburger dropdown
+
+WORDS (Navigation)
+- Home
+- About
+- Amenities
+- Pricing
+- Contact
+
+NUXT UI COMPONENTS
+- UContainer
+- UButton
+- UDropdown
+
+================================================
+4. HERO SECTION
+================================================
+
+POSITION
+- First section below header
+- Minimum height: full screen
+
+LAYOUT
+Desktop:
+- Two columns
+  - Left: Text + Button
+  - Right: Large image
+
+Mobile:
+- Text first
+- Image below
+
+WORDS
+Main Heading:
+"A Better Place To Work"
+
+Subtext:
+"Discover flexible workspaces designed for productivity, collaboration, and growth."
+
+Primary Button:
+"Get Your Place"
+
+IMAGES
+- Large co-working space interior
+- Clean, bright, modern
+- Image aligned right
+
+NUXT UI COMPONENTS
+- UContainer
+- UGrid
+- UImage
+- UButton
+
+================================================
+5. FEATURES SECTION
+================================================
+
+POSITION
+- Directly below hero
+- Centered section
+
+LAYOUT
+- Grid of 4 feature cards
+- Equal size cards
+
+WORDS (Feature Titles)
+- High-Speed Internet
+- 24/7 Access
+- Meeting Rooms
+- Creative Environment
+
+WORDS (Short Labels under icons)
+- Fast & reliable
+- Work anytime
+- Fully equipped
+- Inspiring space
+
+IMAGES
+- Simple icons or minimal illustrations
+- Centered in each card
+
+NUXT UI COMPONENTS
+- UGrid
+- UCard
+- UImage
+
+================================================
+6. IMAGE + TEXT SPLIT SECTION
+================================================
+
+POSITION
+- Middle of page
+
+LAYOUT
+Desktop:
+- Left: Large vertical image
+- Right: Text block
+
+Mobile:
+- Image first
+- Text below
+
+WORDS
+Heading:
+"Built For Modern Professionals"
+
+Paragraph:
+"Our co-working spaces are designed to help freelancers, startups, and teams focus, collaborate, and succeed in a comfortable environment."
+
+IMAGES
+- Tall interior workspace image
+- Rounded corners
+
+NUXT UI COMPONENTS
+- UGrid
+- UImage
+- UCard
+
+================================================
+7. AMENITIES SECTION
+================================================
+
+POSITION
+- Below split section
+
+LAYOUT
+- Grid (3 columns desktop, 1 column mobile)
+- Image on top, label below
+
+WORDS (Amenities)
+- Comfortable Seating
+- Private Offices
+- Free Coffee
+- High-Speed Wi-Fi
+- Conference Rooms
+- Community Events
+
+IMAGES
+- Square images
+- Same size for consistency
+
+NUXT UI COMPONENTS
+- UGrid
+- UCard
+- UImage
+
+================================================
+8. PRICING SECTION
+================================================
+
+POSITION
+- Below amenities
+
+LAYOUT
+- Horizontal pricing cards
+- Middle card highlighted
+
+WORDS
+
+Plan 1:
+Title: "Daily Pass"
+Price: "$10 / Day"
+Features:
+- Open seating
+- Wi-Fi access
+
+Plan 2 (Highlighted):
+Title: "Monthly Membership"
+Price: "$150 / Month"
+Features:
+- Dedicated desk
+- 24/7 access
+- Meeting rooms
+
+Plan 3:
+Title: "Private Office"
+Price: "$300 / Month"
+Features:
+- Private space
+- All amenities
+
+Button text:
+"Choose Plan"
+
+NUXT UI COMPONENTS
+- UGrid
+- UCard
+- UButton
+
+================================================
+9. CONTACT SECTION
+================================================
+
+POSITION
+- Near bottom of page
+
+LAYOUT
+Desktop:
+- Left: Image
+- Right: Contact form
+
+Mobile:
+- Image first
+- Form below
+
+WORDS
+Heading:
+"Get In Touch"
+
+Form Labels:
+- Name
+- Email
+- Message
+
+Button:
+"Send Message"
+
+IMAGES
+- Office interior or exterior
+- Professional look
+
+NUXT UI COMPONENTS
+- UGrid
+- UCard
+- UInput
+- UTextarea
+- UButton
+
+================================================
+10. FOOTER
+================================================
+
+POSITION
+- Bottom of page
+
+LAYOUT
+- 3 columns
+
+WORDS
+- Company logo
+- Navigation links
+- Contact info
+
+Footer Text:
+"© 2026 Co-Working Space. All rights reserved."
+
+IMAGES
+- Logo
+- Social icons only
+
+NUXT UI COMPONENTS
+- UContainer
+- UGrid
+- UButton
+
+================================================
+11. IMAGE RULES
+================================================
+
+- High resolution
+- Neutral, professional tones
+- Rounded corners
+- Lazy-loaded using UImage
+- No stock-photo clutter
+
+================================================
+12. FILE STRUCTURE
+================================================
+
+/pages
+ - index.vue
+ - about.vue
+ - pricing.vue
+ - contact.vue
+
+/components
+ - AppHeader.vue
+ - HeroSection.vue
+ - FeaturesGrid.vue
+ - AmenitiesGrid.vue
+ - PricingCards.vue
+ - ContactForm.vue
+ - AppFooter.vue
+
+================================================
+13. FINAL NOTES
+================================================
+
+- No custom CSS unless unavoidable
+- Nuxt UI components only
+- Pixel-accurate layout
+- Smooth scrolling
+- Clean, readable code
+
+THIS DOCUMENT IS READY TO BE GIVEN DIRECTLY
+TO A DEVELOPER OR AI AGENT FOR IMPLEMENTATION.

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  /* Royal Blue Palette */
+  --color-royal-50:  #EEF3FE;
+  --color-royal-100: #D9E5FD;
+  --color-royal-200: #B3CBFB;
+  --color-royal-300: #7FABF8;
+  --color-royal-400: #5B8BF5;
+  --color-royal-500: #2557D6;
+  --color-royal-600: #1D45B8;
+  --color-royal-700: #163499;
+  --color-royal-800: #0F2579;
+  --color-royal-900: #091960;
+
+  /* Map "primary" to royal blue */
+  --color-primary-50:  var(--color-royal-50);
+  --color-primary-100: var(--color-royal-100);
+  --color-primary-200: var(--color-royal-200);
+  --color-primary-300: var(--color-royal-300);
+  --color-primary-400: var(--color-royal-400);
+  --color-primary-500: var(--color-royal-500);
+  --color-primary-600: var(--color-royal-600);
+  --color-primary-700: var(--color-royal-700);
+  --color-primary-800: var(--color-royal-800);
+  --color-primary-900: var(--color-royal-900);
+}
+
+html {
+  scroll-behavior: smooth;
+}
