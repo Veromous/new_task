@@ -65,7 +65,7 @@
   flex-direction: column;
   padding: 0 0.25rem;
   max-width: 1000px;
-  margin: 1 auto;
+  margin: 0 auto;
 }
 
 /*
