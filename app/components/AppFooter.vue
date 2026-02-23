@@ -2,8 +2,8 @@
   <!-- THICKER / DEEPEST royal blue for footer -->
   <footer class="pt-16 pb-8" style="background: #091960;">
     <UContainer>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b" style="border-color: rgba(91,139,245,0.2)">
-        <!-- Brand -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b" style="border-color: rgba(91,139,245,0.2)">
+        <!-- Section 1: Brand -->
         <div class="space-y-4">
           <div class="flex items-center gap-2">
             <UChip color="primary" size="sm">
@@ -11,25 +11,11 @@
             </UChip>
           </div>
           <p class="text-sm leading-relaxed max-w-xs" style="color:#7FABF8">
-            Your premium co-working space — where great ideas come to life.
+            Discover a workspace designed to inspire focus, collaboration, and creativity.
           </p>
-          <!-- Social icons -->
-          <div class="flex gap-3 pt-2">
-            <UButton
-              v-for="social in socials"
-              :key="social.label"
-              :icon="social.icon"
-              variant="ghost"
-              size="sm"
-              square
-              class="hover:bg-white/10 transition-colors"
-              style="color:#7FABF8"
-              :aria-label="social.label"
-            />
-          </div>
         </div>
 
-        <!-- Nav links -->
+        <!-- Section 2: Quick Links -->
         <div>
           <h4 class="font-semibold text-white mb-5 text-sm uppercase tracking-widest">Quick Links</h4>
           <ul class="space-y-3">
@@ -47,27 +33,47 @@
           </ul>
         </div>
 
-        <!-- Contact info -->
+        <!-- Section 3: Contact Info -->
         <div>
-          <h4 class="font-semibold text-white mb-5 text-sm uppercase tracking-widest">Contact</h4>
+          <h4 class="font-semibold text-white mb-5 text-sm uppercase tracking-widest">Important Links</h4>
           <ul class="space-y-4">
             <li v-for="info in contactInfo" :key="info.label" class="flex items-start gap-3">
-              <UIcon :name="info.icon" class="w-4 h-4 mt-0.5 shrink-0" style="color:#5B8BF5" />
+
               <span class="text-sm" style="color:#7FABF8">{{ info.value }}</span>
             </li>
           </ul>
         </div>
+
+        <!-- Section 4: Follow Us with Social Icons -->
+        <div>
+          <h4 class="font-semibold text-white mb-5 text-sm uppercase tracking-widest">Let's Connect!</h4>
+          <p class="text-sm leading-relaxed mb-4" style="color:#7FABF8">
+            Connect with entrepreneurs, build your network, make great business.
+          </p>
+          <!-- Social icons -->
+          <div class="flex gap-3">
+            <UButton
+              v-for="social in socials"
+              :key="social.label"
+              :icon="social.icon"
+              variant="ghost"
+              size="sm"
+              square
+              class="hover:bg-white/10 transition-colors"
+              style="color:#7FABF8"
+              :aria-label="social.label"
+            />
+          </div>
+        </div>
       </div>
 
-      <!-- Footer bottom -->
-      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <!-- Footer bottom with two separate writings at opposite ends -->
+      <div class="pt-8 flex justify-between items-center">
         <p class="text-sm" style="color:rgba(91,139,245,0.6)">
-          © 2026 Co-Working Space. All rights reserved.
+          Copyright © 2026 Co-Working Space
         </p>
-        <div class="flex gap-4 text-xs" style="color:rgba(91,139,245,0.5)">
-          <a href="#" class="hover:text-white/60 transition-colors">Privacy Policy</a>
-          <span>·</span>
-          <a href="#" class="hover:text-white/60 transition-colors">Terms of Service</a>
+        <div class="flex gap-4" style="color:rgba(91,139,245,0.5)">
+          <a href="#" class="hover:text-white/60 transition-colors text-sm">Powered by Co-Working Space</a>
         </div>
       </div>
     </UContainer>
@@ -84,14 +90,16 @@ const navLinks = [
 ]
 
 const contactInfo = [
-  { label: 'address', icon: 'i-heroicons-map-pin',  value: '123 Business Ave, City Center' },
-  { label: 'email',   icon: 'i-heroicons-envelope', value: 'hello@theworkplace.com' },
-  { label: 'phone',   icon: 'i-heroicons-phone',    value: '(555) 123-4567' }
+  { label: 'address', value: 'Terms and Conditions' },
+  { label: 'email', value: 'Legal' },
+  { label: 'phone', value: 'Business' },
+  { label: 'info', value: 'Partners'}
 ]
 
 const socials = [
   { label: 'Twitter',   icon: 'i-simple-icons-twitter' },
   { label: 'LinkedIn',  icon: 'i-simple-icons-linkedin' },
-  { label: 'Instagram', icon: 'i-simple-icons-instagram' }
+  { label: 'Youtube', icon: 'i-simple-icons-youtube' },
+  { label: 'Facebook',  icon: 'i-simple-icons-facebook' }
 ]
 </script>

@@ -1,30 +1,31 @@
 <template>
   <div style="background: #F5F6FA;">
     <!-- Page Hero -->
-    <section class="page-hero">
-      <UContainer>
-        <UBadge color="primary" variant="soft" class="mb-4 px-4 py-1.5 text-sm font-semibold rounded-full">
-          About Us
-        </UBadge>
-        <h1 class="page-hero-title">
-          A Place That Helps Growth<br />Of Your Work
-        </h1>
-        <p class="page-hero-desc">
-          Work. Connect. Create. Your Perfect Co-Working Space Awaits.
-          A flexible, inspiring workspace designed for professionals, freelancers,
-          and teams who want to work smarter, not harder.
-        </p>
-      </UContainer>
-    </section>
-
+    <AboutHero />
+    <Below />
+    <TeamSection />
     <ImpactSection />
-    <ImageTextSplit />
-    <BenefitsGrid />
-    <TestimonialsSection />
+    < />
   </div>
 </template>
 
 <script setup lang="ts">
+
+import type { ButtonProps } from '@nuxt/ui'
+
+const links = ref<ButtonProps[]>([
+  {
+    label: 'Get started',
+    color: 'neutral'
+  },
+  {
+    label: 'Learn more',
+    color: 'neutral',
+    variant: 'subtle',
+    trailingIcon: 'i-lucide-arrow-right'
+  }
+])
+
 useSeoMeta({
   title: 'About Us — TheWorkPlace',
   description: 'Learn more about TheWorkPlace – our mission, values, and the community behind a better way to work.',

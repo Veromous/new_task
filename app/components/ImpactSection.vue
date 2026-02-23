@@ -13,6 +13,7 @@
             <img
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop&auto=format"
               alt="Co-working space interior"
+              sizes=""
             />
           </div>
           <!-- Small image (behind, bottom-right) -->
@@ -62,9 +63,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 1.25rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 0.25rem;
+  max-width: 1000px;
+  margin: 1 auto;
 }
 
 /*
@@ -77,12 +78,12 @@
 .blue-band {
   position: absolute;
   left: 0;
-  right: 0;
+  right: 0%;
   /* Mobile: from behind-image top (~15% of image area) to bottom */
-  top: 12%;
-  bottom: 0;
+  top: 63%;
+  bottom: -4%;
   background: #2557D6;
-  border-radius: 1.25rem;
+  border-radius: 0rem;
   z-index: 0;
   /* On mobile the blue is full-width behind everything */
 }
@@ -121,7 +122,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 55%;
+  width: 65%;
   height: 85%;
   border-radius: 1.25rem;
   overflow: hidden;
@@ -211,7 +212,7 @@
     - top aligns with behind image top, bottom with front image bottom
   */
   .blue-band {
-    left: 42%;
+    left: 38%;
     right: -9999px;
     top: 15%;
     bottom: 15%;
@@ -219,7 +220,7 @@
   }
 
   .impact-images-col {
-    flex: 0 0 44%;
+    flex: 0 0 38%;
     min-width: 0;
     padding: 0;
   }
