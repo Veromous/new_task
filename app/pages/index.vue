@@ -6,6 +6,8 @@
     <BenefitsGrid />
     <ImpactSection />
     <FacilitiesSection />
+    <AnotherFacility />
+    <Images />
   </div>
 </template>
 

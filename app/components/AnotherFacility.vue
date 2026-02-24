@@ -6,43 +6,7 @@
       <div class="facilities-grid">
 
         <!-- Left: Text Content -->
-        <div class="facilities-text">
-          <h2 class="facilities-title">
-            We Provides All Facilities For Better Work Environment
-          </h2>
-
-          <p class="facilities-desc">
-            At The Work Place, we believe a great workspace is more than just a
-            desk and Wi-Fi — it's an environment that inspires productivity and
-            well-being. Our co-working space is equipped with every modern
-            facility you need to stay focused and comfortable, from high-speed
-            internet and meeting rooms to cozy lounges and premium coffee.
-            Whether you're working solo or collaborating with a team, you'll find
-            everything you need to create, connect, and grow under one roof.
-          </p>
-
-          <!-- Feature badges -->
-          <div class="facilities-badges">
-            <div class="facility-badge">
-              <div class="badge-icon">
-                <UIcon name="i-heroicons-building-office-2" class="w-5 h-5" />
-              </div>
-              <span class="badge-label">Flexible Private Office</span>
-            </div>
-            <div class="facility-badge">
-              <div class="badge-icon badge-icon-alt">
-                <UIcon name="i-heroicons-paint-brush" class="w-5 h-5" />
-              </div>
-              <span class="badge-label">Fully Custom Space</span>
-            </div>
-          </div>
-
-          <!-- CTA Button -->
-          <NuxtLink to="/about" class="facilities-btn">
-            Learn More
-            <UIcon name="i-heroicons-arrow-right" class="w-5 h-5" />
-          </NuxtLink>
-        </div>
+        
 
         <!-- Right: Image with floating card -->
         <div class="facilities-image-wrapper">
@@ -70,6 +34,38 @@
               </p>
             </div>
           </div>
+        </div>
+
+        <div class="facilities-text">
+          <h2 class="facilities-title">
+            Most Affordable Co-Working Place In The City
+          </h2>
+
+          <p class="facilities-desc">
+            we’ve made it our mission to offer premium co-working spaces at prices everyone can afford. Enjoy all the perks of a modern, fully equipped workspace — without the high costs of a traditional office. Our flexible membership plans are designed to fit every budget, giving freelancers, startups, and professionals access to an inspiring environment where productivity meets affordability.
+          </p>
+
+          <!-- Feature badges -->
+          <div class="facilities-badges">
+            <div class="facility-badge">
+              <div class="badge-icon">
+                <UIcon name="i-lucide-person-standing" class="w-5 h-5" />
+              </div>
+              <span class="badge-label">Membership Package</span>
+            </div>
+            <div class="facility-badge">
+              <div class="badge-icon badge-icon-alt">
+                <UIcon name="i-lucide-users" class="w-5 h-5" />
+              </div>
+              <span class="badge-label">Dedicated Office Package</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <NuxtLink to="/about" class="facilities-btn">
+            Check Pricing
+            <UIcon name="i-heroicons-arrow-right" class="w-5 h-5" />
+          </NuxtLink>
         </div>
 
       </div>

@@ -5,7 +5,31 @@
     <Below />
     <TeamSection />
     <ImpactSection />
-    < />
+    <section >
+       <UPageSection 
+    title="People Who Love Our Place"
+    description="Working here has completely changed the way I work. The atmosphere is creative, the people are inspiring, and I never feel isolated like I used to at home. It’s the perfect balance of focus and community."
+    :ui="{
+      title:'text-inverted',
+      description:'text-sm'
+    }"
+    >
+      <template class="flex justify-center items-center">
+  <UUser
+    name="John Doe"
+    description="Software Engineer"
+    :avatar="{
+      src: 'https://i.pravatar.cc/150?u=john-doe',
+      icon: 'i-lucide-image',
+    }"
+    :ui="{
+      name:'text-inverted'
+    }"
+  />
+</template>
+
+    </UPageSection>
+    </section>
   </div>
 </template>
 

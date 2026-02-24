@@ -196,7 +196,7 @@
 /* ── Desktop: side by side ── */
 @media (min-width: 768px) {
   .impact-section {
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
 
   .impact-layout {
@@ -226,8 +226,8 @@
   }
 
   .impact-images {
-    aspect-ratio: 3 / 4;
-    width: 100%;
+    aspect-ratio: 1 ;
+    width: 150%;
     min-height: 460px;
   }
 
@@ -237,8 +237,8 @@
     padding: 0;
     display: flex;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 2.5rem;
+    padding-left: 15rem;
+    padding-right: 0rem; 
   }
 
   .impact-title {
@@ -252,12 +252,12 @@
   }
 
   .impact-images {
-    min-height: 520px;
+    min-height: 620px;
   }
 
   .impact-content-col {
-    padding-left: 3.5rem;
-    padding-right: 3rem;
+    padding-left: 15rem;
+    padding-right: 0rem;
   }
 
   .impact-title {
